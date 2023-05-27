@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Sitio web informativo sobre la prevención del dengue. El dengue es una enfermedad transmitida por mosquitos, y ocurre en zonas tropicales y subtropicales del mundo.">
+
+<title>Dengue | Preveción y Tratamiento</title>
+
+<link rel="shortcut icon" href="assets/images/favicon.ico">
+<link rel="stylesheet" href="assets/css/master.min.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<!--=== Loader Start ======-->
+<div id="loader-overlay">
+  <div class="loader">
+    <div class="loader-inner"></div>
+  </div>
+</div>
+<!--=== Loader End ======-->
+
+<!--=== Wrapper Start ===-->
+<div class="wrapper">
+
+  <!--=== Header Start ===-->
+  <nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full">
+    <!--=== Start Top Search ===-->
+    <div class="fullscreen-search-overlay" id="search-overlay"> <a href="#" class="fullscreen-close" id="fullscreen-close-button"><i class="mdi mdi-close"></i></a>
+      <div id="fullscreen-search-wrapper">
+        <form method="get" id="fullscreen-searchform">
+          <input type="text" name="buscar" value="" placeholder="Buscar..." id="fullscreen-search-input" class="search-bar-top">
+          <i class="fullscreen-search-icon mdi mdi-magnify">
+          <input value="" type="submit">
+          </i>
+        </form>
+      </div>
+    </div>
+    <!--=== End Top Search ===-->
+
+    <div class="container">
+      <!--=== Start Atribute Navigation ===-->
+      <div class="attr-nav">
+        <ul>
+        	<li class="search"><a href="#" id="search-button"><i class="mdi mdi-magnify"></i></a></li>
+        </ul>
+      </div>
+      <!--=== End Atribute Navigation ===-->
+
+      <!--=== Start Header Navigation ===-->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="mdi mdi-menu"></i> </button>
+        <div class="logo"> <a href="index.html"> <img class="logo logo-display" src="assets/images/logo.png" alt=""> <img class="logo logo-scrolled" src="assets/images/logo.png" alt=""> </a> </div>
+      </div>
+      <!--=== End Header Navigation ===-->
+
+      <!--=== Collect the nav links, forms, and other content for toggling ===-->
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="nav navbar-nav navbar-right" data-in="fadeIn" data-out="fadeOut">
+          <li><a class="page-scroll" href="index.html">Inicio</a></li>
+          <li><a class="page-scroll" href="prevencion.html">Prevención</a></li>
+          <li><a class="page-scroll" href="sintomas.html">Síntomas</a></li>
+          <li><a class="page-scroll" href="tratamiento.html">Tratamiento</a></li>
+          <li><a class="page-scroll" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <!--=== /.navbar-collapse ===-->
+    </div>
+  </nav>
+  <!--=== Header End ===-->
+
+  <!--=== Hero Slider Start ===-->
+
+  <section class="home-slider" id="home">
+    <div class="default-slider slick">
+      <div class="slide">
+        <div class="slide-img parallax-effect" style="background:url(assets/images/slides/bg-slider.jpg) center center / cover scroll no-repeat;"></div>
+        <div class="hero-text-wrap">
+          <div class="hero-text">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3 class="upper-case dark-color font-600">Cuidarse</h3>
+                  <h1 class="upper-case font-800 default-color">DENGUE</h1>
+                  <p class="dark-color">Los virus del dengue se transmiten a las personas por medio de la picadura de un mosquito infectado de la especie Aedes. Casi la mitad de la población mundial, vive en áreas con riesgo de dengue. .</p>
+                  <p class="text-left mt-30"><a class="btn btn-color btn-circle btn-md" href="prevencion.html">¿Cómo Protegerse?</a> </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-img parallax-effect" style="background:url(assets/images/slides/home-bg-2.jpg) center center / cover scroll no-repeat;"></div>
+        <div class="hero-text-wrap">
+          <div class="hero-text">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <h3 class="upper-case dark-color font-600">Recomendaciones</h3>
+                  <h1 class="upper-case font-800 green-color">PREVENIR</h1>
+                  <p class="dark-color">Cambiar frecuentemente el agua de los bebederos de animales y de los floreros. Tapar los recipientes con agua, eliminar la basura acumulada en patios y áreas al aire libre, eliminar llantas o almacenamiento en sitios cerrados.</p>
+                  <p class="text-left mt-30"><a class="btn btn-green btn-circle btn-md" href="informacion.html">Sobre el Virus</a> </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=== Hero Slider End ===-->
+
+  <!--=== Welcome Start ===-->
+  <section id="about">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-6 heading-style-one box-title-two text-left">
+  				<h6 class="yellow-color text-uppercase">SOBRE LA ENFERMEDAD</h6>
+  				<h2><span class="font-700">El Virus del Dengue</h2>
+          <p>El dengue se transmite a través de la picadura de un mosquito infectado. Es una enfermedad que afecta personas de todas las edades, con síntomas que varían entre una fiebre leve a una fiebre incapacitante, acompañado de dolor intenso de cabeza, dolor detrás de los ojos, dolor en músculos y articulaciones, y eritema.</p>
+  			</div>
+  		</div>
+
+  		<div class="row mt-100">
+  			<div class="col-md-4">
+  				<div class="feature-box text-center feature-box-rounded mb-20">
+  					<i class="virus-icon img-icon"></i>
+  					<h3 class="font-600">Virus del Dengue</h3>
+  					<p>Se transmite por la picadura de un mosquito infectado con uno de los cuatro serotipos del virus del dengue.</p>
+					<p class="mt-30">
+						<a class="btn btn-green btn-sm btn-circle" href="prevencion.html">Leer Más</a>
+					</p>
+  				</div>
+  			</div>
+  			<div class="col-md-4">
+  				<div class="feature-box text-center feature-box-rounded mb-20">
+  					<i class="enfermo-icono img-icon"></i>
+  					<h3 class="font-600">Afecta a Todos</h3>
+  					<p>Es una enfermedad febril que afecta a lactantes, niños y adultos. Puede ser asintomática, con síntomas.</p>
+					<p class="mt-30">
+						<a class="btn btn-pink btn-sm btn-circle" href="sintomas.html">Leer Más</a>
+					</p>
+  				</div>
+  			</div>
+  			<div class="col-md-4">
+  				<div class="feature-box text-center feature-box-rounded">
+  					<i class="medicina-icono img-icon"></i>
+  					<h3 class="font-600">No hay medicina</h3>
+  					<p>No hay medicina específica para tratar el dengue y tiene un patrón acorde con las estaciones.</p>
+					<p class="mt-30">
+						<a class="btn btn-purple btn-sm btn-circle" href="tratamiento.html">Leer Más</a>
+					</p>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+  <!--=== Welcome End ===-->
+
+  <!--=== Counter Start ===-->
+  <section class="parallax-bg fixed-bg pt-70 pb-70" data-stellar-background-ratio="0.2" style="background-image: url(assets/images/background/bg.png);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="counter-wrap">
+            <h2><span class="counter">112,708</span></h2>
+            <h3>Total Casos</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="counter-wrap">
+            <h2><span class="counter">268</span></h2>
+            <h3>Total Muertes</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="counter-wrap">
+            <h2><span class="counter">93,273</span></h2>
+            <h3>Total Recuperados</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="counter-wrap">
+            <h2><span class="counter">19,435</span></h2>
+            <h3>Casos Activos</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=== Counter End ===-->
+
+  <!--=== Prevention Start ===-->
+  <section id="prevention">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-6 heading-style-one box-title-two text-left">
+  				<h6 class="red-color text-uppercase">¿Cómo cuidarse?</h6>
+  				<h2><span class="font-700">Prevención del Dengue</h2>
+          <p>Puede protegerse y ayudar a prevenir la propagación del virus<br> a otras personas si:</p>
+  			</div>
+  		</div>
+
+      <div class="row mt-50">
+  			<div class="col-md-4 main-service-box-2 text-center col-sm-4">
+  				<i><img class="img-responsive" src="assets/images/dengue/criaderos.jpg" alt="criaderos"></i>
+  				<h4>Evitar criaderos</h4>
+  				<p>Cambiar frecuentemente el agua de los bebederos de animales y de los floreros y tapar los recipientes con agua.</p>
+          <a href="prevencion.html">Leer Más <i class="mdi mdi-arrow-right"></i></a>
+  			</div>
+        <div class="col-md-4 main-service-box-2 text-center col-sm-4">
+  				<i><img class="img-responsive" src="assets/images/dengue/repelente.jpg" alt="repelente"></i>
+  				<h4>Protegerse</h4>
+  				<p>Utilizar repelentes en las áreas del cuerpo que están descubiertas y usar ropa adecuada camisas de manga larga y pantalones largos.</p>
+          <a href="prevencion.html">Leer Más <i class="mdi mdi-arrow-right"></i></a>
+  			</div>
+        <div class="col-md-4 main-service-box-2 text-center col-sm-4">
+  				<i><img class="img-responsive" src="assets/images/dengue/mosquitero.jpg" alt="mosquitero"></i>
+  				<h4>Al Dormir</h4>
+  				<p>Usar mosquiteros en las camas, sobre todo cuando hay pacientes enfermos para evitar que infecten nuevos mosquitos o en los lugares donde duermen los niños.</p>
+          <a href="prevencion.html">Leer Más <i class="mdi mdi-arrow-right"></i></a>
+  			</div>
+
+        <div class="col-md-4 main-service-box-2 text-center col-sm-4">
+  				<i><img class="img-responsive" src="assets/images/dengue/estanques.jpg" alt="estanques"></i>
+  				<h4>Reducir estanques</h4>
+  				<p>Lavar, cepillar tanques y perforar las llantas ubicadas en los parques infantiles que pueden contener aguas estancadas en episodios de lluvia.</p>
+          <a href="prevencion.html">Leer Más <i class="mdi mdi-arrow-right"></i></a>
+  			</div>
+        <div class="col-md-4 main-service-box-2 text-center col-sm-4">
+  				<i><img class="img-responsive" src="assets/images/dengue/rellenar.jpg" alt="rellenar criaderos"></i>
+  				<h4>Rellenar criaderos</h4>
+  				<p>Rellenar con tierra tanques sépticos en desuso, desagües y letrinas abandonadas.</p>
+          <a href="prevencion.html">Leer Más <i class="mdi mdi-arrow-right"></i></a>
+  			</div>
+        <div class="col-md-4 main-service-box-2 text-center col-sm-4">
+  				<i><img class="img-responsive" src="assets/images/dengue/limpiar-patios.jpg" alt="limpiar-patios"></i>
+  				<h4>Patios Limpios</h4>
+  				<p>Recoger basuras y residuos sólidos en predios y lotes baldíos, mantener el patio limpio y participar en jornadas comunitarias de recolección de inservibles.</p>
+          <a href="prevencion.html">Leer Más <i class="mdi mdi-arrow-right"></i></a>
+  			</div>
+
+  		</div>
+  	</div>
+  </section>
+  <!--=== Prevention End ===-->
+
+
+  <!--=== Video Start ===-->
+  <section class="parallax-bg fixed-bg pt-200 pb-200" style="background-image: url(assets/images/background/parallax-bg.jpg);">
+  	<div class="gradient-overlay"></div>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-2 col-md-offset-5">
+  				<div class="center-layout">
+                <div class="v-align-middle"> <a class="popup-youtube" href="https://www.youtube.com/watch?v=5d0ngPB6l_U">
+                  <div class="play-button"><i class="eicon mdi mdi-play"></i> </div>
+                  </a> </div>
+              </div>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+  <!--=== Video End ===-->
+
+
+
+
+  <!--=== Symptoms Start ===-->
+  <section class="light-bg" id="symptom">
+  	<div class="container">
+  		<div class="row">
+        <div class="col-md-6 heading-style-one box-title">
+  				<h6 class="default-color text-uppercase">Síntomas del Dengue</h6>
+  				<h2><span class="font-700">¿Cuáles son los síntomas?</span></h2>
+          <p>Fiebre, dolor en los huesos y dolor de cabeza, dolores en las articulaciones, pérdida del apetito y dolor detrás de los ojos.</p>
+   				<div class="welcome-style-two mt-30">
+   					<div class="thin-border-purple thin-borders pull-left"></div>
+    					<p class="pull-left">Hay unos síntomas que son de alarma, como decaimiento mayor, permanencia de fiebre, sangrado en las encías, en la orina, moretones en la piel y dolor abdominal persistente. No se auto medique, acuda de inmediato al médico.</p>
+    				</div>
+  			</div>
+        <div class="col-md-6">
+  				<img class="img-responsive symptom-img" src="assets/images/dengue/sintomas.png" alt="sintomas"/>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+  <!--=== Symptoms End ===-->
+
+  <!--=== Transmission Start ===-->
+  <section>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-6 heading-style-one box-title-two text-left">
+  				<h6 class="red-color text-uppercase">¿Cómo debe aliviar los síntomas?</h6>
+  				<h2><span class="font-700">Tratamiento del Dengue</h2>
+          <p>En la mayor parte de los casos, el dengue se puede tratar en el domicilio con medicamentos que alivian el dolor. La mejor forma de no contraerlo es protegerse de las picaduras en los mosquitos.</p>
+  			</div>
+  		</div>
+
+      <div class="row mt-50">
+  			<div class="col-md-4 main-service-box text-center col-sm-4 feature-box">
+  				<i class="paracetamol-icono img-icon"></i>
+  				<h4>Paracetamol</h4>
+  				<p>Como no hay un tratamiento específico para el dengue, lo habitual es aliviar el dolor, se prescribe a menudo paracetamol.</p>
+  			</div>
+  			<div class="col-md-4 main-service-box text-center col-sm-4 feature-box">
+  				<i class="hospitalizacion-icono img-icon"></i>
+  				<h4>Hospitalización</h4>
+  				<p>Las personas con dengue grave necesitan ser hospitalizadas y Transfusiones de plaquetas aunque estas no disminuyen el riesgo de hemorragia grave</p>
+  			</div>
+  			<div class="col-md-4 main-service-box text-center col-sm-4 feature-box">
+  				<i class="hidratarse-icono img-icon"></i>
+  				<h4>Hidratarse</h4>
+  				<p>Mientras te estés recuperando del dengue, bebe mucho líquido. Se debe beber 2 a 3 litros de agua por día.</p>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+  <!--=== Transmission End ===-->
+
+
+  <!--=== Hand Wash Start ===-->
+  <section class="light-bg">
+  	<div class="container">
+  		<div class="row">
+        <div class="col-md-6 heading-style-one box-title">
+  				<h6 class="default-color text-uppercase">Recomendaciones</h6>
+  				<h2><span class="font-700">Es necesario tomar acciones para reducir el dengue</span></h2>
+          <p>Sin criaderos no hay dengue</p>
+  			</div>
+  		</div>
+
+      <div class="row mt-30">
+  			<div class="col-md-2 text-center col-sm-4">
+          <div class="box-wrap">
+            <span>1</span>
+    				<div class="img-wrp"><img class="img-responsive" src="assets/images/recomendaciones/limpiar-patio.jpg" alt="recomendaciones-1"></div>
+    				<h4>Límpia tu patio</h4>
+          </div>
+  			</div>
+
+        <div class="col-md-2 main-service-box-3 text-center col-sm-4">
+          <div class="box-wrap">
+            <span>2</span>
+    				<div class="img-wrp"><img class="img-responsive" src="assets/images/recomendaciones/agua-estancada.jpg" alt="recomendaciones-2"></div>
+    				<h4>Elimina Agua Estancada</h4>
+          </div>
+  			</div>
+
+        <div class="col-md-2 main-service-box-3 text-center col-sm-4">
+          <div class="box-wrap">
+            <span>3</span>
+    				<div class="img-wrp"><img class="img-responsive" src="assets/images/recomendaciones/dar-vuelta.jpg" alt="recomendaciones-3"></div>
+    				<h4>Tapa o dar vuelta recipientes</h4>
+          </div>
+  			</div>
+
+        <div class="col-md-2 main-service-box-3 text-center col-sm-4">
+          <div class="box-wrap">
+            <span>4</span>
+    				<div class="img-wrp"><img class="img-responsive" src="assets/images/recomendaciones/tirar-llantas.jpg" alt="recomendaciones-4"></div>
+    				<h4>Tira o perfora llantas</h4>
+          </div>
+  			</div>
+
+        <div class="col-md-2 main-service-box-3 text-center col-sm-4">
+          <div class="box-wrap">
+            <span>5</span>
+    				<div class="img-wrp"><img class="img-responsive" src="assets/images/recomendaciones/lavar.jpg" alt="recomendaciones-5"></div>
+    				<h4>Lava con agua y jabón</h4>
+          </div>
+  			</div>
+
+        <div class="col-md-2 main-service-box-3 text-center col-sm-4">
+          <div class="box-wrap">
+            <span>6</span>
+    				<div class="img-wrp"><img class="img-responsive" src="assets/images/recomendaciones/tanques-de-agua.jpg" alt="recomendaciones-6"></div>
+    				<h4>Tapa los tanques de agua</h4>
+          </div>
+  			</div>
+
+  		</div>
+  	</div>
+  </section>
+  <!--=== Hand Wash End ===-->
+
+  <!--=== Our Team Start ===-->
+  <section id="doctor">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-6 heading-style-one box-title-two text-left">
+  				<h6 class="yellow-color text-uppercase">PIDE ASESORAMIENTO Y CONSULTA AL DOCTOR</h6>
+  				<h2><span class="font-700">Contacta un Doctor</h2>
+          <p>El 2 de julio, el Sistema Nacional de Gestión del Riesgo (SINAGER) declaró emergencia nacional en Honduras por incremento de casos de dengue a nivel nacional. COPECO como ente rector del SINAGER coordina las acciones contra la proliferación del zancudo transmisor del dengue, en los 298 municipios del país, facilitando acceso a atención médica.</p>
+  			</div>
+  		</div>
+
+      <div class="row mt-50">
+        <!-- Team Block -->
+      		<div class="team-block col-lg-4 col-md-4 col-sm-12">
+      			<div class="inner-box">
+      				<ul class="social-icons">
+      					<li><a href="#"><i class="mdi mdi-facebook"></i></a></li>
+      					<li><a href="#"><i class="mdi mdi-twitter"></i></a></li>
+      					<li><a href="#"><i class="mdi mdi-skype"></i></a></li>
+      					<li><a href="#"><i class="mdi mdi-linkedin"></i></a></li>
+      				</ul>
+      				<div class="image">
+      					<a href="#"><img src="assets/images/doctores/marco-espinal.jpg" alt="doctor marco-espinal" /></a>
+      				</div>
+      				<div class="lower-content">
+      					<h3><a href="#">Marco Espinal</a></h3>
+      					<div class="designation">Especialista</div>
+      				</div>
+      			</div>
+      		</div>
+
+      		<!-- Team Block -->
+      		<div class="team-block col-lg-4 col-md-4 col-sm-12">
+      			<div class="inner-box">
+      				<ul class="social-icons">
+      					<li><a href="#"><i class="mdi mdi-facebook"></i></a></li>
+      					<li><a href="#"><i class="mdi mdi-twitter"></i></a></li>
+      					<li><a href="#"><i class="mdi mdi-skype"></i></a></li>
+      					<li><a href="#"><i class="mdi mdi-linkedin"></i></a></li>
+      				</ul>
+      				<div class="image">
+      					<a href="#"><img src="assets/images/doctores/camila-perez.jpg" alt="Doctora Camila Perez" /></a>
+      				</div>
+      				<div class="lower-content">
+      					<h3><a href="#">Camila Perez</a></h3>
+      					<div class="designation">Pediatra</div>
+      				</div>
+      			</div>
+      		</div>
+
+      		<!-- Team Block -->
+      		<div class="team-block col-lg-4 col-md-4 col-sm-12">
+      			<div class="inner-box">
+      				<ul class="social-icons">
+      					<li><a href="#"><i class="mdi mdi-facebook"></i></a></li>
+      					<li><a href="#"><i class="mdi mdi-twitter"></i></a></li>
+      					<li><a href="#"><i class="mdi mdi-skype"></i></a></li>
+      					<li><a href="#"><i class="mdi mdi-linkedin"></i></a></li>
+      				</ul>
+      				<div class="image">
+      					<a href="#"><img src="assets/images/doctores/mary-lou.jpg" alt="Doctora Mary Lou" /></a>
+      				</div>
+      				<div class="lower-content">
+      					<h3><a href="#">Mary Lou</a></h3>
+      					<div class="designation">Especialista</div>
+      				</div>
+      			</div>
+      		</div>
+
+      </div>
+  	</div>
+  </section>
+  <!--=== Our Team End ===-->
+
+  <!--=== Faqs Start ===-->
+  <section class="light-bg" id="faqs">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-6 heading-style-one box-title-two text-left">
+  				<h6 class="red-color text-uppercase">¿TIENE DUDAS?</h6>
+  				<h2><span class="font-700">Preguntas Frecuentes</h2>
+  			</div>
+  		</div>
+      <div class="tabs-style-03">
+        <div class="row mt-50">
+          <div class="icon-tabs">
+            <div class="col-lg-4">
+              <!--== Nav tabs ==-->
+              <ul class="nav nav-tabs text-center" role="tablist">
+                <li role="presentation" class="active"><a href="#disease" role="tab" data-toggle="tab">El Dengue</a></li>
+                <li role="presentation"><a href="#protect" role="tab" data-toggle="tab">Transmisión del Dengue</a></li>
+                <li role="presentation"><a href="#symtom" role="tab" data-toggle="tab">Síntomas</a></li>
+                <li role="presentation"><a href="#spread" role="tab" data-toggle="tab">Tratamiento</a></li>
+                <li role="presentation"><a href="#outbreak" role="tab" data-toggle="tab">Reincidencias</a></li>
+                <li role="presentation"><a href="#animal" role="tab" data-toggle="tab">Origen del Dengue</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-8">
+              <!--== Tab panes ==-->
+              <div class="tab-content text-center">
+                <div role="tabpanel" class="tab-pane fade in active" id="disease">
+                  <div class="panel-group accordion-color" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> ¿Quiénes pueden enfermar de dengue? </a> </h3>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body"><p>Toda persona que es picada por un mosquito infectado puede desarrollar la enfermedad, que posiblemente es peor en los niños que en los adultos. La infección genera inmunidad de larga duración contra el serotipo específico del virus. No protege contra otros serotipos y posteriormente puede exacerbar el dengue hemorrágico.</p></div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">¿Hay cura para el Dengue?</a> </h3>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body"><p>Generalmente el Dengue es una enfermedad que se cura sola. Lo importante son los cuidados que se deben tener para el paciente en la fase de enfermedad, por eso es importante que acuda a su clínica en caso de sospechar que tiene Dengue.</p></div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">¿Cómo saber si tengo Dengue?</a> </h3>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body"><p>Si presenta fiebre y habita en áreas donde hay Dengue, debe acudir a su clínica para que sea el médico quien determine si tiene Dengue.</p></div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">¿Cuánto tiempo dura la enfermedad?</a> </h3>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body"><p>El periodo de incubación del Dengue es de 4 a 7 días a partir del contacto con el virus, la enfermedad dura hasta 15 días.</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="protect">
+                  <div class="panel-group accordion-color" id="accordion-2">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion-2" href="#collapseFive"> ¿Cómo se transmite el Dengue? </a> </h3>
+                      </div>
+                      <div id="collapseFive" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <p>Se transmite por la picadura del mosco infectado con el virus.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-2" href="#collapseSix">¿Se puede contagiar de persona a persona?</a> </h3>
+                      </div>
+                      <div id="collapseSix" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>No, una persona enferma no contagia a otra a menos de que existan moscos en el mismo lugar que piquen a ambas personas.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="symtom">
+                  <div class="panel-group accordion-color" id="accordion-3">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion-2" href="#collapseSeven">¿Cómo saber si ya he padecido Dengue?</a> </h3>
+                      </div>
+                      <div id="collapseSeven" class="panel-collapse collapse in">
+                        <div class="panel-body"><p>Puede acudir a su clínica y en caso necesario el médico le indicará si es necesario realizar estudios de laboratorio para identificar contacto previo con el virus del Dengue.</p></div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-3" href="#collapseNine">¿Cómo son las hemorragias del Dengue?</a> </h3>
+                      </div>
+                      <div id="collapseNine" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Pueden presentarse en cualquier región del cuerpo, como moretones o sangrados.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-3" href="#collapseTen">¿Me puedo morir de Dengue? </a> </h3>
+                      </div>
+                      <div id="collapseTen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Si la atención médica no es recibida a tiempo, la enfermedad puede complicarse y se aumenta el riesgo de morir.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="spread">
+                  <div class="panel-group accordion-color" id="accordion-4">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion-4" href="#collapseThirteen">¿Qué medicamentos se tienen que tomar en caso de Dengue?</a> </h3>
+                      </div>
+                      <div id="collapseThirteen" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <p>Sólo los indicados por su médico.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-4" href="#collapseFourteen">¿Puedo tomar medicinas de las que tengo en casa?</a> </h3>
+                      </div>
+                      <div id="collapseFourteen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>No, lo más recomendable es que acuda a su clínica para verificar qué tipo de medicamento necesita.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-4" href="#collapseFifteen">¿Por qué no puedo tomar aspirinas para el dolor de cabeza cuando tengo Dengue?</a> </h3>
+                      </div>
+                      <div id="collapseFifteen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Porque la aspirina tiene un efecto anticoagulante (no se forman coágulos en la sangre) y en casos de DH se incrementarían las hemorragias.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-4" href="#collapseSixteen">¿Hay vacuna contra el Dengue? </a> </h3>
+                      </div>
+                      <div id="collapseSixteen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Aún no hay vacuna contra el Dengue, sin embargo, hay laboratorios que están trabajando en su elaboración.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="outbreak">
+                  <div class="panel-group accordion-color" id="accordion-5">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion-5" href="#collapseSeventeen">¿Te puede volver a dar Dengue?</a> </h3>
+                      </div>
+                      <div id="collapseSeventeen" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <p>Sí, recuerda que hay 4 serotipos de Dengue. Cuando un paciente se enferma por un serotipo, nunca más se vuelve a enfermar por este serotipo pero sí se puede enfermar por cualquiera de los otros 3 serotipos existentes.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-5" href="#collapseEighteen">¿Cómo se controla o se inactiva el virus? </a> </h3>
+                      </div>
+                      <div id="collapseEighteen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Actualmente no hay forma de controlar el virus, es importante saber que muchos laboratorios a nivel mundial están estudiando el proceso para controlar el virus.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-5" href="#collapseNineteen">¿De dónde viene el Dengue?</a> </h3>
+                      </div>
+                      <div id="collapseNineteen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Los primeros casos que se notificaron como Dengue se realizaron en el continente asiático.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-5" href="#collapseTwenty">¿Por qué muchas de la veces presentaron los síntomas de Dengue y al momento de los resultados salieron negativos, entonces qué pudo ser, cuál fue el diagnostico?</a> </h3>
+                      </div>
+                      <div id="collapseTwenty" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Muchas de las enfermedades que son producidas por virus se parecen en cuanto a los síntomas que puede presentar un paciente, de ahí la importancia de que usted acuda a su médico, para que sea un experto quien pueda determinar el diagnóstico preciso.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="animal">
+                  <div class="panel-group accordion-color" id="accordion-5">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion-6" href="#collapseTwentyOne">¿Cómo nace el mosco? </a> </h3>
+                      </div>
+                      <div id="collapseTwentyOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <p>El Aedes aegypti tiene dos etapas bien diferenciadas en su ciclo de vida: fase acuática con tres formas evolutivas diferentes (huevo, larva y pupa) y fase aérea o adulto o imago.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-6" href="#collapseTwentyTwo">¿Cualquier mosquito puede transmitir el dengue?</a> </h3>
+                      </div>
+                      <div id="collapseTwentyTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>No. Sólo los del género Aedes, el cual tiene lugares de reproducción que comparte con otros mosquitos, como es el caso del Anopheles responsable de transmitir el paludismo. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-6" href="#collapseTwentyThree">¿En Honduras hay mosquito transmisor del Dengue?</a> </h3>
+                      </div>
+                      <div id="collapseTwentyThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>Si, ya que el medio ambiente le favorece.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-6" href="#collapseTwentyFour">¿El cloro mata las larvas?</a> </h3>
+                      </div>
+                      <div id="collapseTwentyFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>No. Se ha observado que el cloro no tiene ningún efecto como larvicida.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+    		    </div>
+        </div>
+
+      </div>
+
+  	</div>
+  </section>
+  <!--=== Faqs End ===-->
+
+  <!--=== Blogs Start ===-->
+  <section class="pb-0" id="blog">
+    <div class="virus-box-1 shapes" data-opacity="0.2"></div>
+  	<div class="virus-box-2 shapes" data-opacity="0.2"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 heading-style-one box-title">
+  				<h6 class="default-color text-uppercase">Noticias</h6>
+  				<h2><span class="font-700">Últimas actualizaciones sobre el Dengue</span></h2>
+  			</div>
+  		</div>
+      <div class="row mt-50">
+        <div class="col-md-4">
+          <div class="post">
+            <div class="post-img"> <img class="img-responsive" src="assets/images/noticias/noticia-1.jpg" alt="noticia-1"/> </div>
+            <div class="post-info">
+              <h3><a href="blog-grid.html">Dengue Honduras 2023: estos son los síntomas</a></h3>
+              <p>Los casos de dengue siguen en aumento. Un especialista del Instituto Nacional de Salud reveló...</p>
+              <div class="date">hace 7 horas</div>
+              <a class="readmore" href="#"><span>Leer Más <i class="eicon mdi mdi-arrow-right"></i></span></a> </div>
+          </div>
+        </div>
+        <!--=== Post End ===-->
+
+        <div class="col-md-4">
+          <div class="post">
+            <div class="post-img"> <img class="img-responsive" src="assets/images/noticias/noticia-2.jpg" alt="noticia-2"/> </div>
+            <div class="post-info">
+              <h3><a href="blog-grid.html">Dengue en América Latina: cómo se transmite y cómo evitarlo</a></h3>
+              <p>De México a Brasil, el dengue es una enfermedad en aumento y ha provocado una epidemia en la región...</p>
+              <div class="date pink-color">Ayer</div>
+              <a class="readmore" href="#"><span>Leer Más <i class="eicon mdi mdi-arrow-right"></i></span></a> </div>
+          </div>
+        </div>
+        <!--=== Post End ===-->
+
+        <div class="col-md-4">
+          <div class="post">
+            <div class="post-img"> <img class="img-responsive" src="assets/images/noticias/noticia-3.jpg" alt="noticia-3"/> </div>
+            <div class="post-info">
+              <h3><a href="blog-grid.html">Continúa a la baja el número de casos de dengue en Tegucigalpa.</a></h3>
+              <p>La nueva cifra es un 25% inferior a la que marcaba el reporte de la semana pasada. Se registraron...</p>
+              <div class="date blue-color">05 Mayo, 2023</div>
+              <a class="readmore" href="#"><span>Leer Más <i class="eicon mdi mdi-arrow-right"></i></span></a> </div>
+          </div>
+        </div>
+        <!--=== Post End ===-->
+
+      </div>
+    </div>
+  </section>
+  <!--=== Blogs End ===-->
+
+  <!--=== Footer Start ===-->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="widget widget-links">
+              <h5 class="widget-title">Prevención del Dengue</h5>
+              <div class="footer-about">
+              	<p>Sitio web informativo sobre la prevención del dengue. El dengue es una enfermedad transmitida por mosquitos, y ocurre en zonas tropicales y subtropicales del mundo.  </p>
+              	<ul class="social-media">
+        				  <li><a href="#" class="mdi mdi-facebook"></a></li>
+        				  <li><a href="#" class="mdi mdi-twitter"></a></li>
+        				  <li><a href="#" class="mdi mdi-pinterest"></a></li>
+        				</ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-2">
+            <div class="widget widget-links">
+              <h5 class="widget-title">Enlaces</h5>
+              <ul>
+                <li><a class="page-scroll" href="index.html">Inicio</a></li>
+                <li><a class="page-scroll" href="prevention.html">Prevención</a></li>
+                <li><a class="page-scroll" href="sintomas.html">Síntomas</a></li>
+                <li><a class="page-scroll" href="tratamiento.html">Tratamiento</a></li>
+                <li><a class="page-scroll" href="contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="widget widget-links">
+              <h5 class="widget-title">Enlaces Esenciales</h5>
+              <ul>
+                <li><a href="https://www.mayoclinic.org/es-es/diseases-conditions/dengue-fever/symptoms-causes/syc-20353078">Dengue - Mayo Clinic</a></li>
+                <li><a href="https://www.paho.org/es/dengue-honduras">Dengue Honduras - OPS</a></li>
+                <li><a href="https://www.who.int/es/news-room/fact-sheets/detail/dengue-and-severe-dengue">Dengue y dengue grave - OMS</a></li>
+                <li><a href="https://www.cdc.gov/dengue/es/index.html">¿Qué es el dengue? - CDC</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="widget widget-text">
+              <h5 class="widget-title">Contacto</h5>
+              <ul class="footer-contact">
+              	<li><i class="mdi mdi-map-marker"></i> <p>Tegucigalpa</p></li>
+                <li><i class="mdi mdi-email"></i> <p><a href="#">leviperez1994@gmail.com </a></p></li>
+                <li><i class="mdi mdi-phone"></i> <p>+504 3386-6823</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+       <div class="row">
+        	<div class="col-md-2 col-md-offset-5">
+        		<div class="logo-footer"><a href="index.html"><img class="img-responsive" src="assets/images/logo.png" alt="chaos-logo"/></a></div>
+        	</div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!--=== Footer End ===-->
+
+</div>
+<!--=== Wrapper End ===-->
+
+<!--=== Javascript Plugins ===-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="assets/js/plugins.js"></script>
+<script src="assets/js/master.min.js"></script>
+<!--=== Javascript Plugins End ===-->
+
+</body>
+</html>
